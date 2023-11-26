@@ -1,0 +1,208 @@
+/* custom properties */
+:root {
+  --theme-color: wheat;
+  --darkBrown: rgb(55, 45, 23);
+  --darkOrange: rgb(140, 94, 13);
+  --light: #ddd;
+  --header-footer: rgb(220, 188, 149);
+}
+
+/* Styles for the body element */
+body {
+  font-family: sans-serif;
+  background-color: rgba(241, 229, 207, 0.438);
+}
+
+/* Styles for the header and footer */
+header,
+footer {
+  background-color: var(--header-footer);
+  color: var(--darkBrown);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* Styles for the navigation */
+nav {
+  background-color: rgb(192, 141, 79);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--darkBrown);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--theme-color);
+}
+
+h2 {
+  color: var(--darkOrange);
+}
+
+/* Styles for the main section and its child elements, projects and blogs */
+
+section {
+  margin-bottom: 40px;
+}
+
+#about p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.projects,
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project,
+.blog {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 200px;
+  color: var(--light);
+}
+
+.project a,
+.blog a {
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  color: var(--darkBrown);
+  text-decoration: none;
+  background-color: var(--theme-color);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--light);
+}
+
+.project p {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.project h3 {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.project:hover,
+.blog:hover {
+  box-shadow: inset 5px 5px 8px var(--theme-color);
+}
+.project a:hover,
+.blog a:hover {
+  font-weight: bold;
+  box-shadow: 2px 2px 5px var(--theme-color);
+}
+
+#project1-background {
+  background: url(/assets/images/background1.jpg);
+  height: 300px;
+  width: 830px;
+}
+
+#project1-background a {
+  margin-top: 180px;
+}
+#project2-background {
+  background: url(/assets/images/background3.jpg);
+}
+#project3-background {
+  background: url(/assets/images/background2.jpg);
+}
+#project5-background {
+  background: url(/assets/images/background5.jpg);
+}
+#project4-background {
+  background: url(/assets/images/background4.jpg);
+}
+
+.blog {
+  background: url(/assets/images/background6.jpg);
+  color: var(--darkBrown);
+}
+
+.project-section1 h3 {
+  color: var(--darkOrange);
+  background-color: var(--theme-color);
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
+}
+.project-section1 p {
+  color: var(--darkOrange);
+  background-color: var(--theme-color);
+  width: 20%;
+  padding: 5px;
+}
+
+.project-section1 a {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.project-section2 {
+  display: flex;
+  flex-basis: 1000px;
+  width: 100%;
+}
+
+.icon a {
+  text-decoration: none;
+  color: var(--darkBrown);
+}
+
+/* Styles when screen size 540px or less, using media query*/
+@media (max-width: 540px) {
+  .project-section2 {
+    display: block;
+  }
+  .project-section1 {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    margin-bottom: 100px;
+  }
+  .project-section1 p {
+    width: 60%;
+  }
+}
