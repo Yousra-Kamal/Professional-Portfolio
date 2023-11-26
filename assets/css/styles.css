@@ -210,11 +210,11 @@ section {
   #project1-background a {
    margin-top: 150px;
   }
-  
+
   #blogs {
     margin-top: 200px;
   }
-
+  .project-section2 a ,
   .blogs a {
     margin: 0;
   }
