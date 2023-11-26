@@ -9,11 +9,11 @@ Welcome to my professional portfolio. This website was built to showcase my tech
 - HTML
 - CSS
 
-## completed Tasks
+## Completed Tasks
 
 - [x] Added semantic HTML elements (**header**, **nav**, **main**, **section**, **footer**).
 - [x] Added about me section.
-- [x] Added deployed Projects.
+- [x] Shoewd my deployed Projects.
 - [x] Added my published Articles.
 - [x] Added a contact me section.
 - [x] Used Flexbox, media queries, CSS variables, Pseudo-classes.
