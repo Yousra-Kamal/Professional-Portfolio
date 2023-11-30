@@ -11,6 +11,7 @@
 body {
   font-family: sans-serif;
   background-color: rgba(241, 229, 207, 0.438);
+  margin: 0;
 }
 
 /* Styles for the header and footer */
@@ -24,7 +25,7 @@ footer {
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
 
@@ -46,6 +47,7 @@ header p {
 /* Styles for the navigation */
 nav {
   background-color: rgb(192, 141, 79);
+  margin-bottom: 3%;
 }
 
 nav ul {
@@ -53,14 +55,12 @@ nav ul {
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 20px;
+  padding: 10px;
 }
 
 nav a {
+  padding: 15px;
+  font-family: serif;
   text-decoration: none;
   color: var(--darkBrown);
   font-weight: bold;
@@ -75,32 +75,28 @@ h2 {
 }
 
 /* Styles for the main section and its child elements, projects and blogs */
-
 section {
   margin-bottom: 40px;
 }
-
 #about p {
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
-
 .projects,
 .blogs {
   display: flex;
   flex-wrap: wrap;
 }
-
 .project,
 .blog {
-  flex: 0 0 calc(50% - 20px);
+  flex-basis: 50%;
+  flex-grow: 1;
   margin: 10px;
   padding: 30px;
   border-radius: 20px;
   height: 200px;
   color: var(--light);
 }
-
 .project a,
 .blog a {
   display: block;
@@ -113,7 +109,6 @@ section {
   padding: 10px;
   border: 1px solid var(--light);
 }
-
 .project p {
   padding: 5px 0;
   font-weight: bold;
@@ -122,7 +117,6 @@ section {
   font-size: 25px;
   font-family: monospace;
 }
-
 .project:hover,
 .blog:hover {
   box-shadow: inset 5px 5px 8px var(--theme-color);
@@ -132,15 +126,12 @@ section {
   font-weight: bold;
   box-shadow: 2px 2px 5px var(--theme-color);
 }
-
 #project1-background {
   background: url(/assets/images/background1.jpg);
   height: 300px;
-  width: 830px;
 }
-
 #project1-background a {
-  margin-top: 180px;
+  margin-top: 160px;
 }
 #project2-background {
   background: url(/assets/images/background3.jpg);
@@ -154,12 +145,10 @@ section {
 #project4-background {
   background: url(/assets/images/background4.jpg);
 }
-
 .blog {
   background: url(/assets/images/background6.jpg);
   color: var(--darkBrown);
 }
-
 .project-section1 h3 {
   color: var(--darkOrange);
   background-color: var(--theme-color);
@@ -173,46 +162,57 @@ section {
   width: 20%;
   padding: 5px;
 }
-
 .project-section1 a {
   padding: 10px;
   width: 50%;
   margin-bottom: 0;
 }
-
 .project-section2 {
   display: flex;
-  flex-basis: 1000px;
   width: 100%;
 }
-
 .icon a {
   text-decoration: none;
   color: var(--darkBrown);
 }
 
 /* Styles when screen size 540px or less, using media query*/
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .project-section2 {
     display: block;
-    height: 600px;
+    width: 50%;
   }
   .project-section1 {
     display: flex;
     height: 300px;
-    width: 500px;
     margin-bottom: 100px;
   }
   .project-section1 p {
     width: 60%;
   }
   #project1-background a {
-    margin-top: 150px;
+    margin-top: 180px;
     width: 90%;
   }
-
   .project-section2 a,
   .blogs a {
     margin: 0;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  #project1-background a {
+    margin-top: 130px;
+  }
+  .project-section2 {
+    display: block;
+    width: 100%;
+  }
+  header,
+  footer,
+  nav {
+    width: 100%;
   }
 }
