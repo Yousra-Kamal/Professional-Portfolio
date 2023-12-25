@@ -22,7 +22,6 @@ Welcome to my professional portfolio. This website was built to showcase my tech
 ## Links
 
 - [The URL of the deployed website :arrow_right:](https://professional-portfolio-ecru.vercel.app/)
-- [The URL of the GitHub repository :arrow_right:](https://github.com/Yousra-Kamal/Professional-Portfolio)
 
 ## Screenshots
 
